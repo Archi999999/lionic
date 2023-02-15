@@ -27,6 +27,22 @@ img {
     padding: 0 15px;
 }
 
+.btn {
+    display: inline-block;
+    padding: 15px 16px;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3172b9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.text_center {
+    text-align: center;
+}
+
+/* Header */
 .header {
     height: 110px;
 }
@@ -51,4 +67,50 @@ img {
 
 .header__btn {
     margin-left: 80px;
+}
+
+/* Hero */
+.hero__container {
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.hero__content {
+    max-width: 50%;
+}
+
+.section_hero_heading {
+    margin-bottom: 20px;
+}
+
+.section_hero_description {
+    margin-bottom: 30px;
+}
+
+.section_hero_btn_description {
+    margin-top: 10px;
+}
+
+/* What the do */
+.section_do {
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+
+.section__description{
+    margin-top: 25px;
+}
+
+.section_do_list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.section_do_item {
+    flex: 1 1 25%;
+    outline: solid 1px red;
+}
+
+.section_do_item:not(:last-child) {
+    margin-right: 30px;
 }
