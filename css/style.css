@@ -156,9 +156,66 @@ ul {
 }
 
 .section_contacts_item {
-    flex: 1 1 33.33;
+    flex: 1 1 33.33%;
 }
 
 .section_contacts_info {
     min-width: 250px;
+}
+
+.section_contacts_icon {
+    display: block;
+    height: 26px;
+    margin-bottom: 25px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 100%;
+    background-color: transparent;
+}
+
+.section_contacts_icon_gps {
+    background-image: url('/img/gps.png');
+}
+
+.section_contacts_icon_phone {
+    background-image: url('/img/phone.png');
+}
+
+.section_contacts_icon_mail {
+    background-image: url('/img/mail.png');
+    background-size: auto 19px;
+}
+
+.section_contacts_heading {
+    display: block;
+    margin-bottom: 40px;
+}
+
+/* Footer */
+.footer {
+    height: 125px;
+}
+
+.footer__container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    margin-right: 25px;
+}
+
+.footer_nav_list {
+    display: flex;
+}
+
+.footer_nav_item:not(:last-child) {
+    margin-right: 35px;
 }
