@@ -1,9 +1,37 @@
+/* open-sans-300 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+       url('../fonts/open-sans-v34-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v34-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+}
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+       url('../fonts/open-sans-v34-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v34-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+}
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+       url('../fonts/open-sans-v34-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v34-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+}
+
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Open-sans', sans-serif;
 }
 
 a {
@@ -29,8 +57,9 @@ ul {
 
 .btn {
     display: inline-block;
-    padding: 15px 16px;
-    font-size: 12px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 1;
     text-transform: uppercase;
     color: #fff;
@@ -50,15 +79,26 @@ ul {
 .header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
-}
-
-.logo {
-    margin-right: auto;
 }
 
 .nav__list {
     display: flex;
+    margin: auto;
+}
+
+.nav_list_item {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.nav__link {
+    color: #1c1c1c;
+}
+
+.nav_list_item.active .nav__link{
+    color: #3172b9;
 }
 
 .nav_list_item:not(:last-child) {
@@ -66,7 +106,7 @@ ul {
 }
 
 .header__btn {
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 /* Hero */
