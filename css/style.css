@@ -67,6 +67,11 @@ ul {
     border-radius: 4px;
     cursor: pointer;
 }
+
+.btn.btn__big {
+    padding: 20px 60px;
+}
+
 .text_center {
     text-align: center;
 }
@@ -110,6 +115,12 @@ ul {
 }
 
 /* Hero */
+.section__hero{
+    background: url(/img/Hero.jpg) right center no-repeat white;
+    background-size: contain;
+    border: none;
+}
+
 .hero__container {
     padding-top: 120px;
     padding-bottom: 130px;
@@ -120,7 +131,12 @@ ul {
 }
 
 .section_hero_heading {
-    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 52;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #1c1c1c;
 }
 
 .section_hero_description {
@@ -138,7 +154,10 @@ ul {
 }
 
 .section__description{
-    margin-top: 25px;
+    margin-top: 33px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #787878;
 }
 
 .section_do_list {
