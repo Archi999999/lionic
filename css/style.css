@@ -76,9 +76,19 @@ ul {
     text-align: center;
 }
 
+.section__heading {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 1.3;
+    font-weight: 300;
+    color: #414141;
+}
+
 /* Header */
 .header {
     height: 110px;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .header__container {
@@ -173,12 +183,13 @@ ul {
 .section_do {
     padding-top: 140px;
     padding-bottom: 100px;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .section__description{
-    margin-top: 33px;
+    margin-top: 0;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 1.31;
     color: #787878;
 }
 
@@ -189,7 +200,33 @@ ul {
 
 .section_do_item {
     flex: 1 1 25%;
-    outline: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+}
+
+.section_do_item_heading {
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.section_do_icon {
+    margin-bottom: 30px;
+}
+
+.section_do_item_description {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    text-align: center;
+    color:#787878;
 }
 
 .section_do_item:not(:last-child) {
@@ -200,6 +237,11 @@ ul {
 .section__clients {
     padding-top: 90px;
     padding-bottom: 100px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.section_clients_heading {
+    margin-bottom: 45px;
 }
 
 .section_clients_list {
@@ -208,21 +250,50 @@ ul {
 
 .section_clients_item {
     flex: 1 1 33.33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 35px 30px ;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
 }
 
 .section_clients_item:not(:last-child) {
     margin-right: 30px;
 }
 
+.section_clients_testimonial {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #787878;
+}
 .section_clients_user {
     display: flex;
     align-items: center;
+    padding-top: 28px;
+    border-top: 1px solid #e9e9e9;
 }
 
 .section_clients_avatar{
     width: 60px;
     height: 60px;
     margin-right: 15px;
+}
+
+.section_clients_username {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.section_clients_user_discription {
+    font-size: 14px;
+    line-height: 25px;
+    color: #787878;
 }
 
 /* Contacts */
